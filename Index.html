@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Billing System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Automated Billing System</h1>
+
+    <!-- Input Section -->
+    <div class="input-box">
+      <input type="text" id="product" placeholder="Product Name">
+      <input type="number" id="price" placeholder="Price">
+      <input type="number" id="qty" placeholder="Quantity">
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Table -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <tbody id="billList"></tbody>
+    </table>
+
+    <h2 id="grandTotal">Grand Total: 0</h2>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
